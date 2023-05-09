@@ -1,0 +1,13 @@
+<h1>Technology</h1>
+<p>llamado desde mi technology</p>
+<h1>Hola Mundo</h1>
+<p>fecha actual <%= Time.now%></p>
+<p>fecha formateada <%= Time.now.strftime("%Y-%m-%d %H:%M")%></p>
+<p>fecha formateada <%= Time.now.strftime("%d-%m-%Y")%></p>
+<%if Time.now.year >=2023 %>
+    <p>Version 2.0</p>
+<%else%>
+<%= puts "Version 2.0"%>
+    <p>Version 1.0</p>
+<%end%>
+
