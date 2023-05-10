@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'deportes/index'
+
   #ruta interna de page 
   #/pages/home/index
   namespace :pages do
@@ -9,12 +11,14 @@ Rails.application.routes.draw do
   #get 'pages/index'
   #get 'pages/about'
 
+  get 'gato/'=> 'post#index'
+  get 'post/'=> 'post#index'
   get 'post/index'
-  get 'welcome/index'
+  #get 'welcome/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  root "technology#index"
+  root "welcome#index"
 
-  #get 'technology/index'
-end
+  get 'technology/index'
+end 
